@@ -1,6 +1,9 @@
 body, html
 {
 	height: 100%;
+
+	background: url('http://mikelyons.org/dvsup.png');
+	color: white;
 }
 
 .box_cont {
@@ -16,7 +19,7 @@ body, html
 	height: 100%;
 	width: 100%;
 
-	background-color: blue;
+	background: #333333;
 }
 
 .box_cont_slim
@@ -32,6 +35,12 @@ body, html
 
 .line_button
 {
+	text-align: right;
 	height: 50px;
-	background-color: cyan;
+	background: #888888;
+}
+
+.line_button_text
+{
+	vertical-align: middle;
 }
