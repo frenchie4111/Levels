@@ -1,0 +1,37 @@
+body, html
+{
+	height: 100%;
+}
+
+.box_cont {
+	float: left;
+	height: 100%;
+	margin: 0 auto;
+	width: 500px;
+}
+.box
+{
+	float: left;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: blue;
+}
+
+.box_cont_slim
+{
+	width: 100px;
+}
+
+.hidden
+{
+	overflow: hidden;
+	width: 0px;
+}
+
+.line_button
+{
+	height: 50px;
+	background-color: cyan;
+}
