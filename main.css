@@ -39,6 +39,10 @@ body, html
 	height: 50px;
 	background: #888888;
 }
+.line_button:hover
+{
+	background: #555555;
+}
 
 .line_button_text
 {

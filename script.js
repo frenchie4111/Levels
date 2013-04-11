@@ -10,7 +10,13 @@ function expand( target ) {
 function collapse( target ) {
 	if( target ) {
 		$("#" + target).parents(".box_cont").addClass("hidden", ANIMATION_SPEED, "linear");
-		$("#" + target).parents(".box_cont").next(".box_cont").addClass("hidden", ANIMATION_SPEED, "linear");
+		$("#" + target).parents(".box_cont").nextAll(".box_cont").each(function() {
+			$(this).addClass("hidden", ANIMATION_SPEED, "linear");
+		});
+		$("#" + target).parents(".box_cont").nextAll(".line_button").each(function() {
+			$(this).removeClass("open");
+			console.log("Removed!");
+		});
 		$("#" + target).addClass("hidden", ANIMATION_SPEED, "linear");
 	}
 }
